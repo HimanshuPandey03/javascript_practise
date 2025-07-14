@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advance Function</title>
+</head>
+<body>
+  <button id="my-button">Click Me</button>
+  <script>
+    //Topics: 
+    //Anonymous Functions as values (bina naam ke function declare karte hai toh usko is called anonymous function :)))) )
+    //Arrow Functions
+    //setTimeout & setInterval
+    //Event Listener
+    //for ecah loop
+    //array methods
+
+    //Anonymous Functions
+
+    // let sum = function(num1, num2){
+    //   return num1 + num2;
+    // };
+    // let newSum = sum;
+    // console.log(sum(4,5));
+    // console.log(sum(4,5));
+
+    //they can be passed as aruguments to other functions. 
+    //((4+5) + 6)
+    // let sumThreeNumbers = function(num1, num2, num3, sumTwoNumbers){
+    //   let sum1 = sumTwoNumbers(num1, num2);
+    //   return sumTwoNumbers(sum1, num3);
+    // }
+
+    // console.log(sumThreeNumbers(4,5,6, sum));
+
+    // console.log(sumThreeNumbers);
+    // console.log(typeof sumThreeNumbers)
+
+    //Topic: Arrow Functions
+
+    // let sum = (num1, num2) => {
+    //   return num1 + num2;
+    // }
+    // console.log(sum(6,4));
+
+    //for multiple argument we have to write in brackets - () for single argument round brackets optional 
+
+    // let square = num  => {
+    //   return num * num;
+    // }
+    // console.log(square(7));
+
+    //method for single line curly brackets and return optional.
+    
+    // let square = num  =>  num * num;
+    // console.log(square(5));
+
+    //Topic: setTimeOut & setInterval 
+
+    // let alarm = function(){
+    //   console.log('So jao dopahar ho gai hai');
+    // };
+
+    // setTimeout(alarm, 5000);
+    // console.log('Alaram Rinning');
+
+    // let alarm = () => {
+    //   console.log('So jao dopahr ho gai hai');
+    // }
+    // setTimeout(alarm, 5000);
+    // console.log('Alaram Rinning');
+
+    // let alarm = () => console.log(`Subaha ho gayi, uth jao. ${new Dtae()}`);
+
+    // setInterval(alarm, 1000);
+
+
+    //Topic: Event Listener
+
+    // let buttonElement = document.querySelector('#my-button');
+    // buttonElement.addEventListener('click', event => console.log('I am clicked'));
+
+    // let buttonElement =document.querySelector('#my-button');
+    // let behaviour = event  => console.log('I am clicekd');
+    // buttonElement.addEventListener('click', behaviour);
+
+    // let printDate = event => console.log(new Date());
+    // buttonElement.addEventListener('click', printDate);
+
+    //Topic: For Each Loop
+
+    // let foods = ['bread', 'rice', 'meat', 'pizza'];
+    // foods.forEach(function(food){
+    //   console.log(foods);
+    // });
+
+    // let arr = [3,5,7,9];
+    // for (let i = 0; i < arr.length; i++){
+    //   console.log(arr[i]);
+    // }
+
+    // arr.forEach((num) => console.log(num)); //it is single arguments 
+
+    //when we use return keyword with forEach loop it will treated as continue statement.  
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // arr.forEach(num => {
+    //   if (num === 5){
+    //     return;
+    //   }
+    //   console.log(`visited: ${num}`);
+    // });
+
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // function serach(arr, num){
+    //   for (let i = 0; i < arr.length; i++){
+    //     if (arr[i] === num){
+    //       console.log(`element found at: ${i}`);
+    //       return;
+    //     }
+    //   }
+    //   console.log('Element was not found');
+    // }
+
+    // serach(arr, 5)
+
+    //Topic: Array Methods => Two Methods 1. map method, 2. filter method
+
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // let odds = arr.filter((num, index) => {
+    //   if(num % 2 === 1){
+    //     return true;
+    //   } else{
+    //     return false;
+    //   }
+    // });
+    // console.log(odds);
+
+    // let newOdds = arr.filter(
+    //   (num, index) => num % 2 === 1
+    // );
+    // console.log(newOdds)
+
+    let arr = [1,2,3,4,5,6,7,8,9];
+    let square = arr.map(num => num * num);
+    console.log(square);
+
+  </script>
+</body>
+</html>

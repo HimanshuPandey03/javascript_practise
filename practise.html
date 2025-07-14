@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise Exercise</title>
+</head>
+<body>
+  <script>
+    
+    // let arr = [1,3,5,6,7,8,3,4];
+    // for(let i = 0; i < arr.length; i++){
+    //   if (arr[i] === 8){
+    //     console.log(`Number found at index ${i}`);
+    //     break;
+    //   }
+    //   console.log('Still Looking');
+    // }
+
+    // for (let i = 1; i <= 25; i++){
+    //   if (i % 2 == 1){
+    //     console.log(i);
+    //   }
+    // }
+
+    // for (let i = 1; i <= 25; i++){
+    //   if (i % 2 == 0){
+    //     continue;
+    //   }
+    //   console.log(i);
+    // }
+
+    //Arrays and Loops Question 1. Create an array of numbers [5,6]. Add 4 at the beginning and 7 at the end of the array.
+    //2. Create a method to return an element at a particular position in the array.
+    //3. Crrate an array copy using slice method.
+    //4. Create a while loop that exits after counting 5 prime numbers.
+    //5. Modify the above loop to finish using break.
+    //6. Create a for loop that prints number 1 to 10 in reverse order.
+    //7. Using continue only print positive numbers form the given array [1, -6, 5, 7, -98]
+    //8. Using accumulator pattern concatenate all the strings in the given array ['KG', 'Coding', 'JavaScript', 'Course', 'is', 'Best']
+
+    //1 => let arr = [5,6];
+    // arr.push(7); //add item in end 
+    // arr.unshift(4); //shift: 0th element delete 
+    // console.log(arr);
+
+    //2 => function getElement(arr, position){
+    //   return arr[position - 1];
+    // }
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // console.log(getElement(arr, 5));
+
+    //3 => function arrCopy(arr){
+    //   return arr.slice(0, arr.length);
+    // }
+    // let arr = [4,5,6,7];
+    // let arr2= arrCopy(arr);
+    // arr2[0]= null;
+    // console.log(arr);
+    // console.log(arr2);
+
+    //4 =>  function isPrime(num){
+    //   for(let i = 2; i < num; i++){
+    //     if (num % i === 0){
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // }
+    // // console.log(isPrime(5));
+    // // console.log(isPrime(10));
+    // // console.log(isPrime(17));
+    // // console.log(isPrime(21));
+
+    //5 => let num = 2;
+    // let i = 0;
+    // while (i < 5){  //while(true)
+    //   if (isPrime(num)){
+    //     console.log(num);
+    //     i++;
+    //     // if(i >= 5){
+    //     //   break;
+    //     // }
+    //   }
+    //   num++;
+    // }
+
+    //6 =>  for(let i = 10; i > 0; i--){
+    //   console.log(i);
+    // }
+
+    // for(let i = 0; i < 10; i++){
+    //   console.log(10 - i);
+    // }
+
+    //7 =>  let nums = [1,-6,5,7,-98];
+    // for(let i = 0; i < nums.length; i++){
+    //   if(nums[i] < 0){
+    //     continue;
+    //   }
+    //   console.log(nums[i]);
+    // }
+
+    let arr = ['KG', 'Coding', 'JavaScript', 'Course', 'is', 'Best'];
+    // let result = '';
+    // for(let i = 0; i < arr.length; i++){
+    //   result += arr[i] + ' ';
+    // }
+    // console.log(result);
+
+    console.log(arr.join(" "));
+
+  </script>
+</body>
+</html>
